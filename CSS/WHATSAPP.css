@@ -79,7 +79,7 @@ body{
     flex-direction: column;
 }
 .togglearea label span {
-    background-color: black;
+    background-color: white;
     height:3px;
     width:70%;
     margin:2px 0px;
@@ -87,76 +87,20 @@ body{
 .togglearea{
     display: none;
 }
-@media screen and (max-width: 700px) {
-    .nav-container{
-        flex-direction:column;
-        display:none;
-    }
-    #toggle:checked + .nav-container{
-        display:flex;
-    }
-    .togglearea{
-        display: flex;
-    }
-}
-/*dropdown*/
-.dropdown button{
-    border:none;
-    background-color: #1EBEA5;
-    color:white;
-    cursor:pointer;
-    margin-top:35px;
-    margin-right:50px;
-}
-.dropdown .list a{
-    display:block;
-    text-decoration:none;
-    color:black;
-    padding:3px;
-    margin:0px;
-}
-.list{
-    background-color: white;
-    visibility:hidden;
-    opacity:0;
-    position:absolute;
-}
-.dropdown{
-    display:inline-block;
-    position:relative;
-}
-.dropdown:hover div{
-    visibility:visible;
-    opacity:1;
-    position:absolute;
-    right:0%;
-    min-width:200px;
-    height:450px;
-    padding-left:20px;
-}
-.dropdown-list{
-    display:flex;
-}
-.dropdown li{
-    margin:0px;
-    padding:0px;
-    width:150px;
-}
-.dropdown div a:hover{
-    text-decoration:underline;
-}
-.ul{
-    list-style-type: none;
-    display:flex;
-    display:inline-block;
-    margin:0px;
-    padding:0px 20px;
-}
 /*second starts*/
+.respons-whatsapp{
+    display:none;
+}
 .second-main{
     display:flex;
     flex-direction: row;
     justify-content: center;
+}
+.google-play{
+    display:none;
+}
+.image-div2{
+    display:none;
 }
 .info{
     margin:20px;
@@ -192,11 +136,6 @@ body{
 }
 .second-app-span{
     margin:10px;
-}
-@media screen and (max-width: 500px){
-    .second-main{
-        flex-direction:column;
-    }
 }
 /*third main starts*/
 .third-main{
@@ -250,11 +189,6 @@ body{
     width:250px;
     height:250px;
 }
-@media screen and (max-width: 500px) {
-    .third-main{
-        flex-direction:column;
-    }
-}
 /*button*/
 .main-button{
     display:flex;
@@ -273,14 +207,6 @@ body{
     position:relative;
     font-weight:bold;
 }
-@media only screen and (max-width:640px){
-    .button{
-    display:flex;
-    justify-content: center;
-    padding:15px 30px;
-    display:inline-block;
-}
-}
 /*footer*/
 .footer-main-div{
     display:flex;
@@ -292,11 +218,11 @@ body{
     list-style-type: none;
     margin-right:120px;
 }
-.footer-main-div li{
+.footer-main-div ul li{
     padding:2px;
     font-size:13px;
 }
-.footer-main-div a{
+.footer-main-div ul li a{
     color:white;
     text-decoration: none;
     font-weight: bold;
@@ -309,7 +235,6 @@ body{
 }
 .footer-second-div{
     display:flex;
-    justify-content: space-around;
     background-color: #272C43;
     padding:10px;
 }
@@ -317,6 +242,7 @@ body{
     display:inline-block;
     color:gray;
     font-weight:bold;
+    margin:0 15%;
 }
 .footer-second-div a{
     text-decoration: none;
@@ -324,13 +250,158 @@ body{
     font-weight: bold;
     font-size:15px;
 }
-@media screen and (max-width: 700px) {
-    .footer-main-div{
+@media screen and (max-width:1058px){
+    #watsapp-link{
+        display:none;
+    }
+    .watsapp-image{
+        margin-left:80%;
+    }
+    .nav-container a{
+        padding:30px 20px;
+    }
+    .fa-caret-down{
+        display:none;
+    }
+    #EN{
+        display: none;
+    } 
+} 
+@media screen and (max-width: 776px) {
+    header{
+        background-color: #1EBEA5;
+    }
+    #watsapp-link{
+        display:none;
+    }
+    .respons-whatsapp{
+        margin-left:50%;
+        display:block;
+        height:70px;
+        width:70px;
+    }
+    .watsapp-image{
+        margin:0px;
+        position:absolute;
+        left:2%;
+        top:2%;
+        height:40px;
+        width:50px;
+    }
+    .response-div{
+        padding-bottom:15px;
+        background-color: #1EBEA5;
+        border-bottom: 1px solid white;
+        height:150px;
+    }
+    .nav-container{
+        flex-direction:column;
+        display:none;
+        position:absolute;
+    }
+    .nav-container a{
+        text-align:left;
+        padding:9px;
+    }
+    .dropdown a{
+        border:1px solid black;
+        position:absolute;
+        left:0;
+    }
+    .nav-links{
+        padding:15px;
+        font-size:15px;
+        border-bottom:1px solid rgb(228, 210, 210);
+    }
+    #toggle:checked + .nav-container{
+        display:flex;
+    }
+    .togglearea{
+        display: flex;
+    }
+    .wrapper{
+        padding:0px;
+        margin:0px;
+    }
+    .dropdown a{
+        padding:0px;
+        margin-left:40%;
+    }
+}
+@media screen and (max-width: 776px) {
+    .second-main{
         display:flex;
         flex-direction:column;
+        justify-content: center;
     }
+    .second-main .info{
+        align-self: center;
+        background-color: #1EBEA5; 
+        margin:0;
+        width:100%;
+        height:400px;
+    }
+    .info ul{
+        display:none;
+    }
+    .second-main .info p{
+        color:white;
+        text-align: center;
+    }
+    #second-para{
+        color:white;
+        text-align: center;
+        font-size: 20px;
+    }
+    .google-play{
+        display:block;
+        width:150px;
+        height:50px;
+        margin:10px auto;
+    }
+    .color-gray{
+        display:none;
+    }
+    .second-main .image-div{
+        display:none;
+    }
+    .second-main .image-div2{
+        display:block;
+        margin:0;
+        width:100%;
+        background-color: #1EBEA5;
+        text-align: center;
+    }
+    .third-main{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .third-main .business{
+        align-self: center;
+        margin:0;
+        width:100%;
+    }
+    .third-main .encryption{
+        align-self: center;
+        margin:0;
+        width:100%;        
+    }
+   .footer-main-div{
+       display:flex;
+       flex-direction:column; 
+   } 
     .footer-second-div{
         display:flex;
         flex-direction:column;
-    }  
+    }
+    .footer-main-div ul li{
+        font-size: 15px;
+    }
+    .footer-main-div ul li a{
+        font-weight: bold;
+    }
+    .whatsapp-inc{
+        margin:5px 0;
+    }
 }

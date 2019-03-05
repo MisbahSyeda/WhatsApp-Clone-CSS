@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,10 @@
     <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
     <title>WhatsApp</title>
 </head>
+
 <body>
     <div class="wrapper">
+        <!-- header -->
         <header>
             <div class="nav-div">
                 <div class="togglearea">
@@ -30,29 +33,16 @@
                             <span id="watsapp-link">WhatsApp</span>
                         </a>
                     </div>
-                    <a href="#">WHATSAPP WEB</a>
-                    <a href="#">FEATURES</a>
-                    <a href="#">DOWNLOAD</a>
-                    <a href="#">SECURITY</a>
-                    <a href="#">FAQ</a>
-                    <div class="dropdown">
-                        <button><i class="fas fa-globe EN"></i> EN <i class="fas fa-caret-down EN"></i></button>
-                        <div class="list">
-                            <p>Select Your Language</p>
-                            <br>
-                            <div class="dropdown-list">
-                                <ul class="ul">
-                                    <li><a href="#">Azərbaycanca</a></li>
-                                    <li><a href="#">Català</a></li>
-                                    <li><a href="#">eesti</a></li>
-                                    <li><a href="#">Gaeilge</a></li>
-                                    <li><a href="#">Latviešu</a></li>
-                                    <li><a href="#">Norsk</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="#" class="nav-links">WHATSAPP WEB</a>
+                    <a href="#" class="nav-links">FEATURES</a>
+                    <a href="#" class="nav-links">DOWNLOAD</a>
+                    <a href="#" class="nav-links">SECURITY</a>
+                    <a href="#" class="nav-links">FAQ</a>
+                    <a href="#"> <i class="fas fa-globe EN"></i> <span id="EN" class="nav-links">EN</span> <i
+                        class="fas fa-caret-down EN"></i> </a>
         </header>
+        <!-- body -->
+        <div class="response-div"><img src="./IMAGES/whatsapp.png"  class="respons-whatsapp"></div>
         <div class="clearfix"></div>
         <div class="second-main">
             <div class="info">
@@ -61,6 +51,8 @@
                 <p id="second-para">With WhatsApp, you'll get fast, simple, secure messaging <br> and calling for free
                     <span class="color-gray">*</span>, available on phones all
                     over the world.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.whatsapp"> <img
+                        src="./IMAGES/google play.png" alt="google" class="google-play"></a>
                 <p class="color-gray">* Data charges may apply. Contact your provider for details.</p>
                 <ul class="app-list">
                     <li><span class="app-span"><a href="#"><i class="fab fa-android"></i> <span class="second-app-span">
@@ -75,7 +67,10 @@
                 </ul>
             </div>
             <div class="image-div">
-                <img src="./IMAGES/watsapp chat.png" alt="chat-image">
+                <img src="./IMAGES/chat.png" alt="chat-image">
+            </div>
+            <div class="image-div2">
+                <img src="./IMAGES/chat2.png" alt="chat-image">
             </div>
         </div>
         <div class="third-main">
@@ -110,43 +105,47 @@
                 <a href="#">EXPLORE FEATURES</a>
             </div>
         </div>
-        <div class="footer-main-div">
-            <ul>
-                <li class="first-li">WATSAPP</li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Security</a></li>
-                <li><a href="#">Download</a></li>
-                <li><a href="#">Watsapp Web</a></li>
-                <li><a href="#">Business</a></li>
-            </ul>
-            <ul>
-                <li class="first-li">COMPANY</li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Brand Center</a></li>
-                <li><a href="#">Get in touch</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-            <ul>
-                <li class="first-li">DOWNLOAD</li>
-                <li><a href="#">Mac/PC</a></li>
-                <li><a href="#">Android</a></li>
-                <li><a href="#">iPhone</a></li>
-                <li><a href="#">Windows Phone</a></li>
-                <li><a href="#">Nokia</a></li>
-            </ul>
-            <ul>
-                <li class="first-li">HELP</li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Facebook</a></li>
-            </ul>
-        </div>
-        <div class="footer-second-div">
-            <p class="whatsapp-inc">  2019 <i class="far fa-copyright"></i> WhatsApp Inc.</p>   
-            <p> <a href="#">Privacy and Terms</a></p>
-           </p>
-        </div>
+        <!-- footer -->
+        <footer>
+            <div class="footer-main-div">
+                <ul class="footer-list">
+                    <li class="first-li">WATSAPP</li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Watsapp Web</a></li>
+                    <li><a href="#">Business</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="first-li">COMPANY</li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Brand Center</a></li>
+                    <li><a href="#">Get in touch</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="first-li">DOWNLOAD</li>
+                    <li><a href="#">Mac/PC</a></li>
+                    <li><a href="#">Android</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Windows Phone</a></li>
+                    <li><a href="#">Nokia</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="first-li">HELP</li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-second-div">
+                <div class="whatsapp-inc"> 2019 <i class="far fa-copyright"></i> WhatsApp Inc.</div>
+                <div id="privacy"> <a href="#">Privacy and Terms</a></div>
+            </div>
+        </footer>
     </div>
+
 </body>
+
 </html>
