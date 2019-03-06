@@ -250,6 +250,12 @@ body{
     font-weight: bold;
     font-size:15px;
 }
+.footer-first{
+    display:flex;
+}
+.footer-second{
+    display:flex;
+}
 @media screen and (max-width:1058px){
     #watsapp-link{
         display:none;
@@ -387,10 +393,6 @@ body{
         margin:0;
         width:100%;        
     }
-   .footer-main-div{
-       display:flex;
-       flex-direction:column; 
-   } 
     .footer-second-div{
         display:flex;
         flex-direction:column;
@@ -403,5 +405,13 @@ body{
     }
     .whatsapp-inc{
         margin:5px 0;
+    }
+    .footer-first{
+        display:flex;
+        flex-direction: column;
+    }
+    .footer-second{
+        display:flex;
+        flex-direction: column;
     }
 }
